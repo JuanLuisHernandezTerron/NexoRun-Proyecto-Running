@@ -3,17 +3,23 @@ import { CommonModule } from '@angular/common';
 import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { EventCardComponent } from './commons/event-card/event-card.component';
+import { MaterialModule } from '../core/material/material.module';
+import { EventsComponent } from './events/events.component';
 
 
 
 @NgModule({
   declarations: [
     RegistrationComponent,
-    HomeComponent
+    HomeComponent,
+    EventCardComponent,
+    EventsComponent
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    MaterialModule
   ]
 })
 export class ModulesModule { }
