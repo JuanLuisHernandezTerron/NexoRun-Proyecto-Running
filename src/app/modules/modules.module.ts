@@ -5,7 +5,6 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { CoreModule } from '../core/core.module';
 import { EventCardComponent } from './commons/event-card/event-card.component';
-import { MaterialModule } from '../core/material/material.module';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { MaterialModule } from '../core/material/material.module';
   imports: [
     CommonModule,
     FormsModule,
-    CoreModule,
-    MaterialModule
+    CoreModule
   ]
 })
 export class ModulesModule { }
