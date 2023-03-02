@@ -1,17 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MaterialModule} from './material/material.module';
+import { BotonComponent } from '../modules/boton/boton.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    BotonComponent
+  ],
   imports: [
     CommonModule,
     MaterialModule
   ],
   exports: [
-    MaterialModule
+    MaterialModule,
+    BotonComponent
   ]
 })
 export class CoreModule { }

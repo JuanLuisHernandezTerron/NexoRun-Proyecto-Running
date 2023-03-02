@@ -5,12 +5,14 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { PopupComponent } from './commons/popup/popup.component';
 import { CoreModule } from '../core/core.module';
+import { EventCardComponent } from './commons/event-card/event-card.component';
 
 @NgModule({
   declarations: [
     RegistrationComponent,
     HomeComponent,
-    PopupComponent
+    PopupComponent,
+    EventCardComponent
   ],
   imports: [
     CommonModule,
