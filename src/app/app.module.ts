@@ -10,7 +10,6 @@ import { NavigationComponent } from './layout/navigation/navigation.component';
 import { CoreModule } from './core/core.module';
 import { ModulesModule } from './modules/modules.module';
 import { SharedModule } from './shared/shared.module';
-
 @NgModule({
   declarations: [
     AppComponent,
