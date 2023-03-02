@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegistrationComponent } from './modules/registration/registration.component';
 import { HomeComponent } from './modules/home/home.component';
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
-import { EventsComponent } from './modules/events/events.component';
+import { EventCardComponent } from './modules/commons/event-card/event-card.component';
 
 const routes: Routes = [{
   path:'',
@@ -12,7 +12,7 @@ const routes: Routes = [{
   children:[
     { path: '', component: HomeComponent  },
     { path: 'register', component: RegistrationComponent},
-    { path: 'events', component: EventsComponent}
+    { path: 'events', component: EventCardComponent}
   ]
   }
 ];
