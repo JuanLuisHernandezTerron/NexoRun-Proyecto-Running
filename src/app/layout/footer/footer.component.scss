@@ -1,0 +1,33 @@
+img{
+    width: 50%;
+}
+
+p{
+text-align: center;
+font-size: large;
+text-decoration:underline;
+}
+
+#logo{
+    background: none !important;
+}
+
+li{
+    font-size:30px;
+    color: black;
+    margin: 10%;
+}
+
+footer{
+    background-color: #82E9DE !important;
+}
+
+a{
+   color: black;
+}
+
+@media only screen and (min-width:700px){
+    ul{
+    justify-content: end;
+}
+}
