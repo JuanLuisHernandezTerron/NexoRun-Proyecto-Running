@@ -4,9 +4,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { BotonComponent } from './boton/boton.component';
-// import { core } from './../core/core.module';
-
-
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +14,8 @@ import { BotonComponent } from './boton/boton.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    CoreModule
   ]
 })
 export class ModulesModule { }
