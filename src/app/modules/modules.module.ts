@@ -3,16 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
-import { PopupComponent } from './commons/popup/popup.component';
 import { CoreModule } from '../core/core.module';
 import { EventCardComponent } from './commons/event-card/event-card.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     RegistrationComponent,
     HomeComponent,
-    PopupComponent,
-    EventCardComponent
+    EventCardComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
