@@ -6,6 +6,7 @@ import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { BotonComponent } from './modules/boton/boton.component';
 import { EventCardComponent } from './modules/commons/event-card/event-card.component';
 import { LoginComponent } from './modules/login/login.component';
+import { InputComponent } from './modules/commons/input/input.component';
 
 const routes: Routes = [{
   path:'',
