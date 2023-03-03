@@ -5,6 +5,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { BotonComponent } from './modules/boton/boton.component';
 import { EventCardComponent } from './modules/commons/event-card/event-card.component';
+import {EventodetalleComponent} from './modules/eventodetalle/eventodetalle.component'
 
 const routes: Routes = [{
   path:'',
@@ -12,7 +13,9 @@ const routes: Routes = [{
   pathMatch:'prefix',
   children:[
     { path: 'register', component: RegistrationComponent},
-    { path: '', component: EventCardComponent}
+    { path: '', component: EventCardComponent},
+    { path: 'boton', component: BotonComponent},
+    {path: 'eventodetalle',component: EventodetalleComponent}
   ]
   }
 ];

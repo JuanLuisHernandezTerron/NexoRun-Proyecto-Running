@@ -10,6 +10,8 @@ import { NavigationComponent } from './layout/navigation/navigation.component';
 import { CoreModule } from './core/core.module';
 import { ModulesModule } from './modules/modules.module';
 import { SharedModule } from './shared/shared.module';
+import { EventodetalleComponent } from './modules/eventodetalle/eventodetalle.component';
+
 @NgModule({
   declarations: [
     AppComponent,
