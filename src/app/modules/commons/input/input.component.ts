@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 
-var template = `<input [type]="inputType" [placeholder]="placeholder" size="30px" matInput>`;
+var template = ``;
 
 @Component({
-  selector: 'app-input',
-  template: template,
+  selector: 'app-input-text',
+  template: '<input type="text" required size="30px" matInput>',
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent {
-  inputType: string = "text";
-  placeholder: string = "";
 }
