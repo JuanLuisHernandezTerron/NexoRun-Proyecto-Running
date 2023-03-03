@@ -115,10 +115,6 @@
     }
   },
   "cli": {
-<<<<<<< HEAD
     "analytics": false
-=======
-    "analytics": "6bd19789-ee83-44b6-905b-b2c98d5e4d30"
->>>>>>> ismael
   }
 }
