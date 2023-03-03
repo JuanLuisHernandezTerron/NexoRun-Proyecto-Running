@@ -11,9 +11,8 @@ const routes: Routes = [{
   component: SkeletonComponent,
   pathMatch:'prefix',
   children:[
-    { path: '', component: HomeComponent  },
     { path: 'register', component: RegistrationComponent},
-    { path: 'events', component: EventCardComponent}
+    { path: '', component: EventCardComponent}
   ]
   }
 ];
