@@ -1,19 +1,23 @@
 <div class="container">
     <div class="fondo m-auto">
         <div class="row mt-4">
-            <div class="col-9 ms-3 mt-5">
-                <h3>Nombre*</h3>
-                <input class="" type="text">
-            </div>
-            <div class="col-2 ms-4 text-center mt-4">
+            <div class=" d-md-none col-10 col-md-2 ms-4 text-center mt-4">
                 <img src="./../../../assets/img/klipartz.png" alt="imagenPerfil" >
                 <input class="mt-2 botonPerfil"type="button" value="Subir">
             </div>
-            <div class="col-9 ms-3">
+            <div class="col-10 col-md-9 ms-3 mt-5">
+                <h3>Nombre*</h3>
+                <input class="" type="text">
+            </div>
+            <div class="d-none d-md-block col-10 col-md-2 ms-4 text-center mt-4">
+                <img src="./../../../assets/img/klipartz.png" alt="imagenPerfil" >
+                <input class="mt-2 botonPerfil"type="button" value="Subir">
+            </div>
+            <div class="col-10 col-md-9 ms-3">
                 <h3>Apellidos*</h3>
                 <input class="mb-3" type="text">
             </div>
-            <div class="col-9 row ms-1">
+            <div class="col-12 col-md-9 ms-1 row ms-md-1">
                 <div class="col-6">
                     <h3>Fecha de Nacimiento*</h3>
                     <input class="mb-3" type="date">
@@ -23,18 +27,18 @@
                     <input class="mb-3" type="text">
                 </div>
             </div>
-            <div class="col-9 ms-3">
+            <div class="col-10 col-md-9 ms-3">
                 <h3>Direccion de resistencia</h3>
                 <input class="mb-3" type="text">
             </div>
-            <div class="col-9 ms-3">
+            <div class="col-10 col-md-9 ms-3">
                 <h3>Club de Running</h3>
                 <input class="mb-3" type="text">
             </div>
-            <div class="col-2 ms-4 mt-5">
+            <div class="d-none d-md-block col-10 col-md-2 ms-4 mt-5">
                 <input type="button" class="botonRegistrar" value="Registrarse">
             </div>
-            <div class="col-9 ms-3 mb-5">
+            <div class="col-12 col-md-9 ms-3 mb-5">
                 <div class="row">
                     <div class="col-6">
                         <h3>Talla Camiseta</h3>
@@ -48,6 +52,9 @@
                             <option *ngFor="let metodo of metodoPagos" [value]="metodo">{{metodo}}</option>
                         </select>
                     </div>
+            </div>
+            <div class=" d-md-none col-10 col-md-2 ms-4 mt-5">
+                <input type="button" class="botonRegistrar" value="Registrarse">
             </div>
 
         </div>
