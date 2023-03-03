@@ -15,8 +15,9 @@ mat-card-title {
   font-size: 1.3em;
 }
 
-app-boton {
+a {
   margin: auto;
+  text-decoration: none;
 }
   
 .example-header-image {
@@ -39,4 +40,6 @@ mat-card-content{
 
 mat-card-actions{
   background-color: #00867D;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
