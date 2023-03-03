@@ -10,6 +10,7 @@ import { InputComponent } from './commons/input/input.component';
 import { InputPassComponent } from './commons/input-pass/input-pass.component';
 import { InputMailComponent } from './commons/input-mail/input-mail.component';
 import { InputCheckboxComponent } from './commons/input-checkbox/input-checkbox.component';
+import { EventodetalleComponent } from './eventodetalle/eventodetalle.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { InputCheckboxComponent } from './commons/input-checkbox/input-checkbox.
     InputComponent,
     InputPassComponent,
     InputMailComponent,
-    InputCheckboxComponent
+    InputCheckboxComponent,
+    EventodetalleComponent
   ],
   imports: [
     CommonModule,
