@@ -7,16 +7,19 @@ import { BotonComponent } from './modules/boton/boton.component';
 import { EventCardComponent } from './modules/commons/event-card/event-card.component';
 import { LoginComponent } from './modules/login/login.component';
 import { InputComponent } from './modules/commons/input/input.component';
+import {EventodetalleComponent} from './modules/eventodetalle/eventodetalle.component'
 
 const routes: Routes = [{
   path:'',
   component: SkeletonComponent,
   pathMatch:'prefix',
   children:[
-    { path: '', component: HomeComponent  },
+    { path: '', component: EventCardComponent},
     { path: 'register', component: RegistrationComponent},
     { path: 'login', component: LoginComponent},
-    { path: 'events', component: EventCardComponent}
+    { path: 'events', component: EventCardComponent},
+    { path: 'boton', component: BotonComponent},
+    { path: 'eventodetalle',component: EventodetalleComponent}
   ]
   }
 ];

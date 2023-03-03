@@ -4,20 +4,42 @@
     border-radius: 5%;
     text-align: center;
     vertical-align: auto;
-    font-size: 1.3em;
+    font-size: 1.4em;
+    font-weight:500;
     margin: auto;
   }
 
 mat-card-title {
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  font-size: 1.3em;
 }
 
-app-boton {
+a {
   margin: auto;
+  text-decoration: none;
 }
   
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
-} 
+}
+img{
+  width: 100%;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+mat-card-content{
+  background-color: #00867D;
+  color: white;
+}
+
+mat-card-actions{
+  background-color: #00867D;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
