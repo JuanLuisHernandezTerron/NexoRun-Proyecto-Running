@@ -4,7 +4,7 @@ var template = ``;
 
 @Component({
   selector: 'app-input-text',
-  template: '<input type="text" required size="30px" matInput>',
+  templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent {
