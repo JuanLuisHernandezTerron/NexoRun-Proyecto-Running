@@ -1,7 +1,7 @@
 <div id="containerEvents">
   <h1 class="text-center py-2 my-4 w-75 mx-auto">Carreras Disponibles:</h1>
-  <div class="row">
-    <mat-card class="example-card col-12 col-xl-3 mt-4" *ngFor="let evento of eventos">
+  <div class="row w-75 m-auto">
+    <mat-card class="example-card mt-4 m-auto" *ngFor="let evento of eventos">
       <a class="eventodetalle" href="eventodetalle"><img class="mt-2" mat-card-image src={{evento.img}} alt="Foto Runner"/></a>
       <mat-card-content>
         <mat-card-title>{{evento.name}}</mat-card-title>
@@ -13,19 +13,5 @@
         <a href="register"><app-boton></app-boton></a>
       </mat-card-actions>
     </mat-card>.
-  </div>
-  <div class="row mt-5">
-    <mat-card class="example-card col-12 col-xl-3 mt-4" *ngFor="let evento of eventos2">
-      <a class="eventodetalle" href="eventodetalle"><img class="mt-2" mat-card-image src={{evento.img}} alt="Foto Runner"/></a>
-      <mat-card-content>
-        <mat-card-title>{{evento.name}}</mat-card-title>
-        <div id="place">{{evento.place}}</div>
-        <div id="date">{{evento.date.getDate()}}/{{evento.date.getMonth()}}/{{evento.date.getFullYear()}}</div>
-        <div id="price">{{evento.price}} €</div>
-      </mat-card-content>
-      <mat-card-actions class="justify-content-center">
-        <a href="register"><app-boton></app-boton></a>
-      </mat-card-actions>
-    </mat-card>
   </div>
 </div>
