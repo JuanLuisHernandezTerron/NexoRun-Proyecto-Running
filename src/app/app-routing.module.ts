@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RegistrationComponent } from './modules/registration/registration.component';
-import { HomeComponent } from './modules/home/home.component';
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { BotonComponent } from './modules/boton/boton.component';
 import { EventCardComponent } from './modules/commons/event-card/event-card.component';
 import { LoginComponent } from './modules/login/login.component';
-import { InputComponent } from './modules/commons/input/input.component';
 import {EventodetalleComponent} from './modules/eventodetalle/eventodetalle.component';
 
 const routes: Routes = [{
