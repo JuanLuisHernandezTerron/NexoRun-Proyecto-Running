@@ -1,7 +1,7 @@
 <mat-form-field class="example-full-width">
     <mat-label>Correo Electronico</mat-label>
     <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
-           placeholder="Ex. pat@example.com">
+           placeholder="Ejemplo: nexorun@xxxx.xxx">
     <mat-hint>Correo Bien Introducido</mat-hint>
     <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
       Por favor Introduce un email correcto
@@ -9,4 +9,4 @@
     <mat-error *ngIf="emailFormControl.hasError('required')">
       Email es <strong>requerido</strong>
     </mat-error>
-  </mat-form-field>
+</mat-form-field>
