@@ -7,7 +7,7 @@ import { Evento } from './events.model';
   styleUrls: ['./event-card.component.scss']
 })
 export class EventCardComponent {
-<<<<<<< HEAD
+
   evento1 = new Evento(1, "Carrera Popular", "Carrera popular gratuita de Bormujos", "Bormujos", new Date(2023,2,20), 0, "./../assets/img/Runner.jpg" )
   evento2 = new Evento(2, "Media Maratón", "Media maratón en Camas", "Camas", new Date(2023,3,21), 7, "./../assets/img/Camas.jpg" )
   evento3 = new Evento(3, "Carrera Nocturna", "Carrera nocturna por Espartinas", "Espartinas", new Date(2023,4,22), 15, "./../assets/img/espartinas.jpg" )
