@@ -1,23 +1,3 @@
-// import { Component } from '@angular/core';
-// import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
-// import {ErrorStateMatcher} from '@angular/material/core';
-
-// export class ValidadorEmail implements ErrorStateMatcher {
-//   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-//     const isSubmitted = form && form.submitted;
-//     return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
-//   }
-// }
-
-// @Component({
-//   selector: 'app-input-mail',
-//   templateUrl: './input-mail.component.html',
-//   styleUrls: ['./input-mail.component.scss']
-// })
-// export class InputMailComponent {
-//   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
-//   matcher = new ValidadorEmail();
-// }
 
 import {Component} from '@angular/core';
 import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
@@ -34,9 +14,10 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 /** @title Input with a custom ErrorStateMatcher */
 @Component({
   selector: 'app-input-mail',
-  templateUrl: './input-mail.component.html',
+  templateUrl: 'validationEmail.html',
   styleUrls: ['./input-mail.component.scss'],
 })
+
 export class InputMailComponent {
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 

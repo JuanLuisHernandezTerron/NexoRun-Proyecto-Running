@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RegistrationComponent } from './registration/registration.component';
@@ -12,6 +13,7 @@ import { InputMailComponent } from './commons/input-mail/input-mail.component';
 import { InputCheckboxComponent } from './commons/input-checkbox/input-checkbox.component';
 import { EventodetalleComponent } from './eventodetalle/eventodetalle.component';
 
+
 @NgModule({
   declarations: [
     RegistrationComponent,
@@ -22,7 +24,7 @@ import { EventodetalleComponent } from './eventodetalle/eventodetalle.component'
     InputPassComponent,
     InputMailComponent,
     InputCheckboxComponent,
-    EventodetalleComponent
+    EventodetalleComponent  
   ],
   imports: [
     CommonModule,

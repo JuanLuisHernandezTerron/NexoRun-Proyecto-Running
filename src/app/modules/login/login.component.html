@@ -10,24 +10,18 @@
 <body>
     <form class="mt-5">
         <h1>Login</h1>
-        <mat-form-field>
-            <mat-label>Correo electrónico</mat-label>
-            <br>
-            <app-input-mail></app-input-mail>
-        </mat-form-field>
-        <br><br>
-        <mat-form-field>
-            <mat-label>Contraseña</mat-label>
-            <br>
-            <app-input-pass></app-input-pass>
-        </mat-form-field>
+        <mat-label>Correo electrónico</mat-label>
         <br>
-        <mat-form-field>
-            <app-input-checkbox></app-input-checkbox>
-            <mat-label>Recordar contraseña</mat-label>
-        </mat-form-field>
+        <app-input-mail></app-input-mail>
         <br><br>
-        <button type="submit" mat-raised-button color="primary">LOGIN</button>
+        <mat-label>Contraseña</mat-label>
+        <br>
+        <app-input-pass></app-input-pass>
+        <br>
+        <!-- <app-input-checkbox></app-input-checkbox> -->
+        <mat-label>Recordar contraseña</mat-label>
+        <br><br>
+        <app-boton></app-boton>
         <p>¿No estás registrado aún? <a style="color: rgb(10, 154, 141);" href="register">Regístrate</a></p>
     </form>
 </body>

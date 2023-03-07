@@ -4,14 +4,13 @@ import {MaterialModule} from './material/material.module';
 import { BotonComponent } from '../modules/boton/boton.component';
 
 
-
 @NgModule({
   declarations: [
     BotonComponent
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
   ],
   exports: [
     MaterialModule,
