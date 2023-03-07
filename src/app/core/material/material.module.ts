@@ -9,6 +9,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -26,8 +27,8 @@ import {MatInputModule} from '@angular/material/input';
     MatDialogModule,
     FormsModule,
     ReactiveFormsModule,
-    MatInputModule
-    
+    MatInputModule,
+    MatSelectModule
   ],
   exports:[
     MatSlideToggleModule,
@@ -40,7 +41,8 @@ import {MatInputModule} from '@angular/material/input';
     MatDialogModule,
     FormsModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ]
 })
 
