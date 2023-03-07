@@ -1,62 +1,96 @@
 <div class="container">
     <div class="fondo m-auto">
-        <div class="row mt-4">
+        <form class="row mt-4">
             <div class=" d-md-none col-10 col-md-2 ms-4 text-center mt-4">
-                <img src="assets/img/klipartz.png" alt="imagenPerfil" >
-                <input class="mt-2 botonPerfil"type="button" value="Subir">
+                <img src="assets/img/klipartz.png" alt="imagenPerfil">
+                <input class="mt-2 botonPerfil" type="button" value="Subir">
             </div>
-            <div class="col-10 col-md-9 ms-3 mt-5">
-                <h3>Nombre*</h3>
-                <input class="" type="text">
+            <div class="form-group col-10 col-md-9 ms-3 mt-5">
+                <label for="firstName">Nombre</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" #firstName="ngModel" required
+                    [(ngModel)]="model.firstName" />
+                <div [hidden]="firstName.valid || firstName.pristine" class="alert alert-danger">
+                    Por favor, instruduzca su Nombre.
+                </div>
             </div>
             <div class="d-none d-md-block col-10 col-md-2 ms-4 text-center mt-4">
-                <img src="assets/img/klipartz.png" alt="imagenPerfil" >
-                <input class="mt-2 botonPerfil"type="button" value="Subir">
+                <img src="assets/img/klipartz.png" alt="imagenPerfil">
+                <input class="mt-2 botonPerfil" type="button" value="Subir">
             </div>
             <div class="col-10 col-md-9 ms-3">
-                <h3>Apellidos*</h3>
-                <input class="mb-3" type="text">
+                <label for="lastName">Apellidos</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" #lastName="ngModel" required
+                    [(ngModel)]="model.lastName" />
+                <div [hidden]="lastName.valid || lastName.pristine" class="alert alert-danger">
+                    Por favor, introduzca sus Apellidos.
+                </div>
             </div>
             <div class="col-12 col-md-9 ms-1 row ms-md-1">
-                <div class="col-6">
-                    <h3>Fecha de Nacimiento*</h3>
-                    <input class="mb-3" type="date">
+                <div class="form-group col-6">
+                    <label for="date">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" #fechaNacimiento="ngModel" required
+                        [(ngModel)]="model.fechaNacimiento" />
+                    <div [hidden]="fechaNacimiento.valid || fechaNacimiento.pristine" class="alert alert-danger">
+                        Por favor, introduzca una fecha de nacimiento valida.
+                    </div>
                 </div>
-                <div class="col-6">
-                    <h3>DNI*</h3>
-                    <input class="mb-3" type="text">
+                <div class="form-group col-6">
+                    <label for="date">DNI</label>
+                    <input type="text" class="form-control" id="dni" name="dni" #dni="ngModel" required
+                        [(ngModel)]="model.dni" />
+                    <div [hidden]="dni.valid || dni.pristine" class="alert alert-danger">
+                        Por favor, introduzca un DNI valido.
+                    </div>
                 </div>
             </div>
-            <div class="col-10 col-md-9 ms-3">
-                <h3>Direccion de resistencia</h3>
-                <input class="mb-3" type="text">
+            <div class="form-group col-10 col-md-9 ms-3">
+                <label for="direccionCasa">Direccion de resistencia</label>
+                <input type="text" class="form-control" id="direccionCasa" name="direccionCasa" #direccionCasa="ngModel" required
+                    [(ngModel)]="model.direccionCasa" />
+                <div [hidden]="direccionCasa.valid || direccionCasa.pristine" class="alert alert-danger">
+                    Por favor, introduzca una Dirección valida.
+                </div>
             </div>
-            <div class="col-10 col-md-9 ms-3">
-                <h3>Club de Running</h3>
-                <input class="mb-3" type="text">
+            <div class="form-group col-10 col-md-9 ms-3">
+                <label for="runningClub">Club de Running</label>
+                <input type="text" class="form-control" id="runningClub" name="runningClub" #runningClub="ngModel" required
+                    [(ngModel)]="model.runningClub" />
+                <div [hidden]="runningClub.valid || runningClub.pristine" class="alert alert-danger">
+                    Por favor, introduzca un Club de Running valida.
+                </div>
             </div>
             <div class="d-none d-md-block col-10 col-md-2 ms-4 mt-5">
                 <input type="button" class="botonRegistrar" value="Registrarse">
             </div>
             <div class="col-12 col-md-9 ms-3 mb-5">
                 <div class="row">
-                    <div class="col-6">
-                        <h3>Talla Camiseta</h3>
-                        <select name="TallaCamisa" id="TallaCamisa">
+                    <div class="form-group col-6">
+                        <label for="date">Talla Camiseta</label>
+                        <select         
+                        class="form-control"
+                        id="size"
+                        name="size"
+                        #size="ngModel"
+                        required
+                        [(ngModel)]="model.size">
                             <option *ngFor="let size of sizes" [value]="size">{{size}}</option>
                         </select>
                     </div>
-                    <div class="col-6">
-                        <h3>Método de pago</h3>
-                        <select name="metodoPago" id="metodoPago">
+                    <div class="form-group col-6">
+                        <label for="date">Método de pago</label>
+                        <select         
+                        class="form-control"
+                        id="metodoPago"
+                        name="metodoPago"
+                        required>
                             <option *ngFor="let metodo of metodoPagos" [value]="metodo">{{metodo}}</option>
                         </select>
                     </div>
-            </div>
-            <div class=" d-md-none col-10 col-md-2 ms-4 mt-5">
-                <input type="button" class="botonRegistrar" value="Registrarse">
-            </div>
+                </div>
+                <div class=" d-md-none col-10 col-md-2 ms-4 mt-5">
+                    <input type="button" class="botonRegistrar" value="Registrarse">
+                </div>
 
-        </div>
+            </div>
+        </form>
     </div>
-</div>
